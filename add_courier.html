@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Add Courier </title>
+	</head>
+	<body>
+		<h1 style="color:Olive;"> Courier Management System </h1>
+		<hr>
+		<nav>
+			<a href="user_home.html" style="font-size:27px;"> Home |</a>
+			<a href="add_courier.html" style="font-size:27px;"> Add New Courier |</a>
+			<a href="user_courier.html" style="font-size:27px;"> Courier |</a>
+			<a href="track.html" style="font-size:27px;"> Track |</a>
+			<a href="user_offers.html" style="font-size:27px;"> Offers |</a>
+			<a href="user_branch.html" style="font-size:27px;"> Branch Info |</a>
+			<a href="user_profile.html" style="font-size:27px;"> Profile |</a>
+			<a href="index.html" style="font-size:27px;"> Logout </a>
+		</nav>
+		<br><br>
+		<p style="font-size:17px;"> Fill up the form to book your courier...</p>
+		<form>
+			<label>Origin:
+			<select id="origin" autofocus required>
+				<option value=surat>Surat</option>
+				<option value=ahmedabad>Ahmedabad</option>
+				<option value=nadiad>Nadiad</option>
+			</select>
+			</label>
+			<label>Destination:
+			<select id="origin" required>
+				<option value=surat>Surat</option>
+				<option value=ahmedabad>Ahmedabad</option>
+				<option value=nadiad>Nadiad</option>
+			</select>
+			</label><br><br>
+			Weight:<input type="number" name="weight" required>
+			Length:<input type="number" name="length" required>
+			Width:<input type="number" name="width" required>
+			Height:<input type="number" name="height" required>
+			<br><br>
+			Name:<input type="text" name="name" required>
+			email:<input type="email" name="email" required>
+			phone:<input type="tel" name="phno" required>
+			<br><br>
+			<input type="submit" name="add" value="Book Now"/>
+			
+		</form>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Branch Courier </title>
+	</head>
+	<body>
+		<h1 style="color:Olive;"> Courier Management System </h1>
+		<hr>
+		<nav>
+			<a href="branch_home.html" style="font-size:27px;"> Home |</a>
+			<a href="branch_courier.html" style="font-size:27px;"> Courier |</a>
+			<a href="transport.html" style="font-size:27px;"> Transport Staff |</a>
+			<a href="admin_branch.html" style="font-size:27px;"> Branch Info |</a>
+			<a href="admin_profile.html" style="font-size:27px;"> Profile |</a>
+			<a href="index.html" style="font-size:27px;"> Logout </a>
+		</nav>
+		<br><br>
+		<p style="font-size:17px;"> Details of couriers...</p>
+		<label> Current cost/kg*km is 3.5 INR </label><br><br>
+		<form action="">
+		  <label for="gsearch">Search courier by ID:</label>
+		  <input type="search" id="gsearch" name="gsearch">
+		  <input type="submit">
+		</form>
+		<br>
+		<h3>Pendding of couriers</h3>
+		<table border="1"> 
+			<tr>
+				<th>ID</th> 
+				<th>source</th>
+			    <th>Destination</th>
+				<th>Date</th>
+			</tr>
+			<tr>
+			   <td>C004</td>
+			   <td>surat</td>
+			   <td>nadiad</td>
+			   <td>24 march,2020</td>
+			   <td><button name="manage" value="manage">Manage</button><td>
+			   <td><button name="generatebill" value="generatebill">Generate Bill</button><td>
+			</tr>
+			<tr>
+			   <td>C003</td>
+			   <td>surat</td>
+			   <td>ahmedabad</td>
+			   <td>15 jun,2020</td>
+			   <td><button name="manage" value="manage">Manage</button><td>
+			   <td><button name="generatebill" value="generatebill">Generate Bill</button><td>
+			</tr>
+		</table>
+		<br>
+		<h3>History of couriers</h3>
+		<table border="1"> 
+			<tr>
+				<th>ID</th> 
+				<th>From</th>
+			    <th>TO</th>
+				<th>Date of delivery</th>
+			</tr>
+			<tr>
+			   <td>C001</td>
+			   <td>surat</td>
+			   <td>nadiad</td>
+			   <td>14 jan,2020</td>
+			</tr>
+			<tr>
+			   <td>C002</td>
+			   <td>surat</td>
+			   <td>ahmedabad</td>
+			   <td>25 feb,2020</td>
+			</tr>
+		</table>
+
+	</body>
+</html>
