@@ -2,40 +2,119 @@
 <html>
 	<head>
 		<title> Login </title>
+		<!----icons---------->
+		<link rel="stylesheet" href="./css/all.css">
+		<!----Custom style----->
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
-		<h1 style="color:Olive;"> Courier Management System </h1>
-		<hr>
-		<a href="index.html" style="font-size:30px;"> Home </a>
-		<form action="" method="POST">
-		<h1 style="color:navy;">Login</h1>
+	<!----------nav--------------->
+	<nav class="nav">
+		<div class="nav-menu flex-row">
+			<div class="nav-brand">
+				<a href="#" class="text-gray"> Courier Management System </a>
+			</div>
+			<div class="toggle-collapse">
+				<div class="toggle-icons">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+			<div>
+				<ul class="nav-items">
+					<li class="nav-link">
+						<a href="index.html"> Home </a>
+					</li>
+					<li class="nav-link">
+						<a href="#"> Pricing </a>
+					</li>
+					<li class="nav-link">
+						<a href="#"> How it's work </a>
+					</li>
+					<li class="nav-link">
+						<a href="register.html"> Sign Up </a>
+					</li>
+					<li class="nav-link">
+						<a href="#"> Contact Us </a>
+					</li>
+				</ul>
+			</div>
+			<div class="social text-gray">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+	</nav>
+	<!-------------x--------nav---------x--------->
+	<!-------------main------------------------->
+	<main>
+		<section class="site-title">
+			<form action="#" method="post" class="forms">
+				<h2 style="padding: 3rem 7.5rem;color: cadetblue">Login</h2>
+				<h3 style="padding-left: 7.5rem;color: red;">*Required fields</h3>
+				<label>
+					*Username:
+				</label>
+				<div class="intxt">
+					<input type="text" name="username" required/>
+				</div>
+				<label>
+					*Password:
+				</label>
+				<div class="intxt">
+					<input type="password" name="password" required/>
+				</div>
+				<div>
+					<input type="submit" class="btn" value="Login" style="margin-left: 28vh">
+				</div>
+			</form>
+		</section>
+		<section>
+			<p>----Temporary links for Home pages----</p>
+			<button class="btn" style="background-color: lightcoral;"><a href="manage_staff.html"> Admin Home </a></button>
+			<button class="btn" style="background-color: lightcoral;"><a href="add_courier.html"> User Home </a></button>
+			<button class="btn" style="background-color: lightcoral;"><a href="staff_courier.html"> Staff Home </a></button>
+			<button class="btn" style="background-color: lightcoral;"><a href="branch_courier.html"> Branch Home </a></button>
+		</section>
+	</main>
+	<!-------x----------main------------x------->
 
-		<div>
-			Username:<input type="text" placeholder="Username" name="username" required>
+	<!-------------footer------------------->
+	<footer class="footer">
+		<div class="container">
+			<div class="about-us">
+				<h2>About Us</h2>
+				<p>We connects the world and provide better shipping facility to world.</p>
+			</div>
+			<div class="customer-support">
+				<h2>Customer Support</h2>
+				<a href="register.html">Open an Account</a><br>
+				<a href="login.html">Login to your Account</a><br>
+				<a href="#">Track your courier</a>
+			</div>
+			<div class="contact-us">
+				<h2>Contact Us</h2>
+				<p><i class="fas fa-envelope"></i> courier247@gmail.com</p>
+				<p><i class="fas fa-phone-square-alt"></i> 1890 111 2222</p>
+			</div>
+			<div class="follow">
+				<h2>Follow Us</h2>
+				<p>Let us be Social</p>
+				<div>
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-youtube"></i>
+				</div>
+			</div>
 		</div>
-		<br>
-		<div>
-			Password:<input type="password" placeholder="Password" name="password" required>
+		<div class="move-up">
+			<span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
 		</div>
-		<br>
-		<input type="submit" value="Login">
-		<br><br>
-		<div>
-			Don't have account? <a href="register.html">Sign up</a>
-		</div>
-		<br>
-		<div>
-			<a href="#">Forgot password?</a>
-		</div>
+	</footer>
 
-		</form>
-		<br><br><hr>
-		<h3>--------Temporary Links for Admin dashboard,User Dashboard and staff member dashboard after login--------</h3>
-		<a href="admin_home.html" style="font-size:20px;"> Admin Home |</a>
-		<a href="user_home.html" style="font-size:20px;"> User Home |</a>
-		<a href="staff_home.html" style="font-size:20px;">Staff Home |</a>
-		<a href="branch_home.html" style="font-size:20px;"> Branch Admin  </a>
-			
+	<!-----------x------footer---------x-------->
 
 	</body>
 

@@ -2,71 +2,151 @@
 <html>
 	<head>
 		<title> sign up </title>
+		<!----icons---------->
+		<link rel="stylesheet" href="./css/all.css">
+		<!----Custom style----->
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
-		<h1 style="color:Olive;"> Courier Management System </h1>
-		<hr>
-		<a href="index.html" style="font-size:30px;"> Home </a>
-		<form action="" method="post" >
-			<h2 style="color:navy;">Register</h2>
-			<h3 style="color:red;">*Required fields</h3>
-			<label>
-				*Username
-			</label>
-			
-			<div>
-				<input type="text" name="username"/>
+		<!----------nav--------------->
+		<nav class="nav">
+			<div class="nav-menu flex-row">
+				<div class="nav-brand">
+					<a href="#" class="text-gray"> Courier Management System </a>
+				</div>
+				<div class="toggle-collapse">
+					<div class="toggle-icons">
+						<i class="fas fa-bars"></i>
+					</div>
+				</div>
+				<div>
+					<ul class="nav-items">
+						<li class="nav-link">
+							<a href="index.html"> Home </a>
+						</li>
+						<li class="nav-link">
+							<a href="#"> Pricing </a>
+						</li>
+						<li class="nav-link">
+							<a href="#"> How it's work </a>
+						</li>
+						<li class="nav-link">
+							<a href="login.html"> Login </a>
+						</li>
+						<li class="nav-link">
+							<a href="#"> Contact Us </a>
+						</li>
+					</ul>
+				</div>
+				<div class="social text-gray">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
 			</div>
-			<label>
-				*Password
-			</label>
-			
-			<div>
-				<input type="password" name="password"/>
+		</nav>
+<!-------------x--------nav---------x--------->
+
+<!-------------main------------------->
+		<main>
+			<section class="site-title">
+				<form action="login.html" method="post" class="forms">
+					<h2 style="padding-left: 14.5rem;color: cadetblue">Register</h2>
+					<h3 style="padding-left: 7.5rem;color: red;">*Required fields</h3>
+					<label>
+						*Username:
+					</label>
+					<div class="intxt">
+						<input type="text" name="username" required/>
+					</div>
+					<label>
+						*Password:
+					</label>
+					<div class="intxt">
+						<input type="password" name="password" required/>
+					</div>
+					<label>
+						*Re-enter password:
+					</label>
+					<div class="intxt">
+						<input type="password" name="cpassword" required/>
+					</div>
+					<br>
+					<div class="ingen">
+						<label>
+							*Gender:
+						</label>
+						&nbsp;
+						<input type="radio" name="gender" value="male" style="margin-left: 1vh" checked><label class="lb">Male</label>
+						&nbsp;
+						<input type="radio" name="gender" value="female" style="margin-left: 6vh"><label class="lb">Female</label>
+					</div>
+					<br>
+					<label>
+						*Email-id:
+					</label>
+
+					<div class="intxt">
+						<input type="email" name="email" required/>
+					</div>
+					<label>
+						*Birthdate:
+					</label>
+					<div class="intxt">
+						<input type="date" name="bdate" required/>
+					</div>
+					<label>
+						*Mobile-no
+					</label>
+					<div class="intxt">
+						<input type="tel" name="mono" required/>
+					</div>
+					<div>
+						<input type="submit" class="btn" value="Register" style="margin-left: 20vh">
+						<input type="reset" class="btn" value="Reset">
+					</div>
+				</form>
+			</section>
+		</main>
+
+	<!-------x----------main------x-------->
+
+	<!-------------footer------------------->
+		<footer class="footer">
+			<div class="container">
+				<div class="about-us">
+					<h2>About Us</h2>
+					<p>We connects the world and provide better shipping facility to world.</p>
+				</div>
+				<div class="customer-support">
+					<h2>Customer Support</h2>
+					<a href="register.html">Open an Account</a><br>
+					<a href="login.html">Login to your Account</a><br>
+					<a href="#">Track your courier</a>
+				</div>
+				<div class="contact-us">
+					<h2>Contact Us</h2>
+					<p><i class="fas fa-envelope"></i> courier247@gmail.com</p>
+					<p><i class="fas fa-phone-square-alt"></i> 1890 111 2222</p>
+				</div>
+				<div class="follow">
+					<h2>Follow Us</h2>
+					<p>Let us be Social</p>
+					<div>
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-youtube"></i>
+					</div>
+				</div>
 			</div>
-			<label>
-				*Re-enter password
-			</label>
-		
-			<div>
-				<input type="password" name="cpassword"/>
+			<div class="move-up">
+				<span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
 			</div>
-			<br>
-			<div>
-				<label>
-					*Gender:
-				</label>
-				&nbsp;
-				<input type="radio" name="gender" value="male"> Male
-				&nbsp;
-				<input type="radio" name="gender" value="female"> Female
-			</div>
-			<br>
-			<label>
-				*Email-id
-			</label>
-			
-			<div>
-				<input type="email" name="email"/>
-			</div>
-			<label>
-				*Birthdate
-			</label>
-			
-			<div>
-				<input type="date" name="bdate"/>
-			</div>
-			<label>
-				*Mobile-no
-			</label>
-			
-			<div>
-				<input type="tel" name="mono"/>
-			</div>
-			<div class="button">
-			<input type="submit" class="logbtn" value="Submit">
-			<input type="reset" class="logbtn" value="Reset">
-			</div>
-			</form>
+		</footer>
+
+	<!-----------x------footer---------x-------->
+
 	</body>
 </html>

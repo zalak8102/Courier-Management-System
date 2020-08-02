@@ -1,53 +1,109 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title> staff Home </title>
+		<title> staff Profile </title>
+		<!----icons---------->
+		<link rel="stylesheet" href="./css/all.css">
+		<!----Custom style----->
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
-		<h1 style="color:Olive;"> Courier Management System </h1>
-		<hr>
-		<nav>
-			<a href="staff_home.html" style="font-size:27px;"> Home |</a>
-			<a href="staff_courier.html" style="font-size:27px;"> Courier |</a>
-			<a href="staff_branch.html" style="font-size:27px;"> Branch Info |</a>
-			<a href="staff_profile.html" style="font-size:27px;"> Profile |</a>
-			<a href="index.html" style="font-size:27px;"> Logout </a>
-		</nav>
-		<br><br>
-		<div>
+	<!----------nav--------------->
+	<nav class="nav">
+		<div class="nav-menu flex-row">
+			<div class="nav-brand">
+				<a href="#" class="text-gray"> Courier Management System </a>
+			</div>
+			<div class="toggle-collapse">
+				<div class="toggle-icons">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+			<div>
+				<ul class="nav-items">
+					<li class="nav-link">
+						<a href="staff_courier.html"> Courier </a>
+					</li>
+					<li class="nav-link">
+						<a href="staff_branch.html"> Branch Info </a>
+					</li>
+					<li class="nav-link">
+						<a href="staff_profile.html"> Profile </a>
+					</li>
+					<li class="nav-link">
+						<a href="index.html"> Logout </a>
+					</li>
+				</ul>
+			</div>
+			<div class="social text-gray">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+	</nav>
+	<!-------------x--------nav---------x--------->
+	<!----------------main--------------------->
+	<hr>
+	<div>
 		<!-- Header section start -->
 		<br>
 		<!-- Header section end -->
 
 		<!-- Hero section start -->
-		<section>
-			<div>
-				<div>
-					<div>
-						<div>
-							<div>
-								<div>
-									<h2>Profile</h2>
-									<ul>
-                                        <li><span>Username:</span>Haresh patel</li>
-                                        <li><span>Password:</span>Haresh@123</li>
-										<li><span>Date of Birth:</span>24 jan,1997</li>
-										<li><span>Gender:</span>Male</li>
-										<li><span>E-mail:</span>haresh@gmail.com</li>
-										<li><span>Phone :</span>9977665544</li>
-									</ul>
-								</div>
-								<button name="update" value="update">Update</button>
-							</div>
-							<div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+		<section class="prf">
+			<h2>Profile</h2>
+			<ul class="uli">
+				<li><span>Username:</span>Haresh patel</li>
+				<li><span>Password:</span>Haresh@123</li>
+				<li><span>Date of Birth:</span>24 jan,1997</li>
+				<li><span>Gender:</span>Male</li>
+				<li><span>E-mail:</span>haresh@gmail.com</li>
+				<li><span>Phone :</span>9977665544</li>
+			</ul>
+			<button class="btn" name="update" value="update">Update</button>
+
 		</section>
 		<!-- Hero section end -->
 
+	</div>
+	<!-----------x---------main------------x-------->
+		<!-------------footer------------------->
+		<footer class="footer">
+			<div class="container">
+				<div class="about-us">
+					<h2>About Us</h2>
+					<p>We connects the world and provide better shipping facility to world.</p>
+				</div>
+				<div class="customer-support">
+					<h2>Customer Support</h2>
+					<a href="register.html">Open an Account</a><br>
+					<a href="login.html">Login to your Account</a><br>
+					<a href="#">Track your courier</a>
+				</div>
+				<div class="contact-us">
+					<h2>Contact Us</h2>
+					<p><i class="fas fa-envelope"></i> courier247@gmail.com</p>
+					<p><i class="fas fa-phone-square-alt"></i> 1890 111 2222</p>
+				</div>
+				<div class="follow">
+					<h2>Follow Us</h2>
+					<p>Let us be Social</p>
+					<div>
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-youtube"></i>
+					</div>
+				</div>
 			</div>
+			<div class="move-up">
+				<span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+			</div>
+		</footer>
+
+		<!-----------x------footer---------x-------->
+
 	</body>
 </html>

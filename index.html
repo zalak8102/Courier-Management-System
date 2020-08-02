@@ -1,20 +1,109 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title> Home </title>
+		<!----icons---------->
+		<link rel="stylesheet" href="./css/all.css">
+		<!----Custom style----->
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
-		<h1 style="color:olive;"> Courier Management System </h1>
-		<hr>
-		<nav>
-			<!--a href="#" style="font-size:30px;"> Pricing |</a>
-			<a href="#" style="font-size:30px;"> How it's work |</a-->
-			<a href="login.html" style="font-size:30px;"> Login |</a>
-			<a href="register.html" style="font-size:30px;"> Sign up </a>
+
+		<!----------nav--------------->
+		<nav class="nav">
+			<div class="nav-menu flex-row">
+				<div class="nav-brand">
+					<a href="#" class="text-gray"> Courier Management System </a>
+				</div>
+				<div class="toggle-collapse">
+					<div class="toggle-icons">
+						<i class="fas fa-bars"></i>
+					</div>
+				</div>
+				<div>
+					<ul class="nav-items">
+						<li class="nav-link">
+							<a href="#"> Pricing </a>
+						</li>
+						<li class="nav-link">
+							<a href="#"> How it's work </a>
+						</li>
+						<li class="nav-link">
+							<a href="login.html"> Login </a>
+						</li>
+						<li class="nav-link">
+							<a href="register.html"> Sign up </a>
+						</li>
+						<li class="nav-link">
+							<a href="#"> Contact Us </a>
+						</li>
+					</ul>
+				</div>
+				<div class="social text-gray">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+				</div>
+			</div>
 		</nav>
-		<br><br>
-		<br>
-		<h2 style="text-align:center;color:green;"> we know the time impotance!...</h2>
-		<h3 style="text-align:center;color:green;"> 24/7 available for your service...</h3>
+		<!-----x--------nav---------x--------->
+
+		<!----------main section-------------->
+
+		<main>
+			<!----site title------->
+			<section class="site-title">
+				<div class="site-background">
+					<h3> we know the time importance!!!</h3>
+					<h2> 24/7 available for your service</h2>
+					<button class="btn"><a href="register.html"> Sign up </a></button>
+				</div>
+			</section>
+			<!--x--site title---x---->
+		</main>
+
+		<!----x-----main section-----x-------->
+
+		<!----------footer------------------->
+
+		<footer class="footer">
+			<div class="container">
+				<div class="about-us">
+					<h2>About Us</h2>
+					<p>We connects the world and provide better shipping facility to world.</p>
+				</div>
+				<div class="customer-support">
+					<h2>Customer Support</h2>
+					<a href="register.html">Open an Account</a><br>
+					<a href="login.html">Login to your Account</a><br>
+					<a href="#">Track your courier</a>
+				</div>
+				<div class="contact-us">
+					<h2>Contact Us</h2>
+					<p><i class="fas fa-envelope"></i> courier247@gmail.com</p>
+					<p><i class="fas fa-phone-square-alt"></i> 1890 111 2222</p>
+				</div>
+				<div class="follow">
+					<h2>Follow Us</h2>
+					<p>Let us be Social</p>
+					<div>
+						<i class="fab fa-facebook"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="fab fa-twitter"></i>
+						<i class="fab fa-youtube"></i>
+					</div>
+				</div>
+			</div>
+			<div class="move-up">
+				<span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+			</div>
+		</footer>
+
+		<!-----x------footer----------------->
+
 	</body>
 </html>

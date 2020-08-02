@@ -1,34 +1,113 @@
 <html>
 	<head>
-		<title> Courier </title>
+		<title> Offers </title>
+		<!----icons---------->
+		<link rel="stylesheet" href="./css/all.css">
+		<!----Custom style----->
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
 	<body>
-		<h1 style="color:Olive;"> Courier Management System </h1>
-		<hr>
-		<nav>
-			<a href="admin_home.html" style="font-size:27px;"> Home |</a>
-			<a href="manage_staff.html" style="font-size:27px;"> Manage staff |</a>
-			<a href="manage_branch.html" style="font-size:27px;"> Manage branch |</a>
-			<a href="courier.html" style="font-size:27px;"> Courier |</a>
-			<a href="offers.html" style="font-size:27px;"> Offers |</a>
-			<a href="profile.html" style="font-size:27px;"> Profile |</a>
-			<a href="index.html" style="font-size:27px;"> Logout </a>
-		</nav>
-		<br><br>
-		<article>
+	<!----------nav--------------->
+	<nav class="nav">
+		<div class="nav-menu flex-row">
+			<div class="nav-brand">
+				<a href="#" class="text-gray"> Courier Management System </a>
+			</div>
+			<div class="toggle-collapse">
+				<div class="toggle-icons">
+					<i class="fas fa-bars"></i>
+				</div>
+			</div>
+			<div>
+				<ul class="nav-items">
+					<li class="nav-link">
+						<a href="manage_staff.html"> Manage staff </a>
+					</li>
+					<li class="nav-link">
+						<a href="manage_branch.html"> Manage branch </a>
+					</li>
+					<li class="nav-link">
+						<a href="courier.html"> Courier </a>
+					</li>
+					<li class="nav-link">
+						<a href="offers.html"> Offers </a>
+					</li>
+					<li class="nav-link">
+						<a href="profile.html"> Profile </a>
+					</li>
+					<li class="nav-link">
+						<a href="index.html"> Logout </a>
+					</li>
+				</ul>
+			</div>
+			<div class="social text-gray">
+				<a href="#"><i class="fab fa-facebook"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-twitter"></i></a>
+				<a href="#"><i class="fab fa-youtube"></i></a>
+			</div>
+		</div>
+	</nav>
+	<!-------------x--------nav---------x--------->
+
+<!--------------------main---------------->
+	<hr>
+	<form action="">
+		<input type="search" id="gsearch" name="gsearch" placeholder="Search offers by ID">
+		<span><i class="fas fa-chevron-right"></i></span>
+	</form>
+		<article style="margin: 3rem 1rem;">
 			<h1> Offer no.1 </h1>
 			<p>Offer for Golden members is running till 25 sep,2020,It's 50% off on courier.</p>
-			<button name="upadte" value="update">Update</button>
-			<button name="remove" value="remove">Remove</button>
+			<button class="btn" name="update" value="update">Update</button>
+			<button class="btn" name="remove" value="remove">Remove</button>
 		</article>
-		<article>
+		<article style="margin: 5rem 1rem;">
 			<h1> Offer no.2 </h1>
 			<p>Offer for all members is running till 5 sep,2020,It's 5% off on courier.</p>
-			<button name="upadte" value="update">Update</button>
-			<button name="remove" value="remove">Remove</button>
+			<button class="btn" name="update" value="update">Update</button>
+			<button class="btn" name="remove" value="remove">Remove</button>
 		</article>
 		
+<!----x------------main-----------x-------------------->
 
-			
+	<!-------------footer------------------->
+	<footer class="footer">
+		<div class="container">
+			<div class="about-us">
+				<h2>About Us</h2>
+				<p>We connects the world and provide better shipping facility to world.</p>
+			</div>
+			<div class="customer-support">
+				<h2>Customer Support</h2>
+				<a href="register.html">Open an Account</a><br>
+				<a href="login.html">Login to your Account</a><br>
+				<a href="#">Track your courier</a>
+			</div>
+			<div class="contact-us">
+				<h2>Contact Us</h2>
+				<p><i class="fas fa-envelope"></i> courier247@gmail.com</p>
+				<p><i class="fas fa-phone-square-alt"></i> 1890 111 2222</p>
+			</div>
+			<div class="follow">
+				<h2>Follow Us</h2>
+				<p>Let us be Social</p>
+				<div>
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-twitter"></i>
+					<i class="fab fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		<div class="move-up">
+			<span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+		</div>
+	</footer>
+
+	<!-----------x------footer---------x-------->
+
+
+
 	</body>
 </html>
