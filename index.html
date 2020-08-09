@@ -9,13 +9,20 @@
 		<link rel="stylesheet" href="./css/all.css">
 		<!----Custom style----->
 		<link rel="stylesheet" href="./css/style.css">
+		<!------AOS--------->
+		<link rel="stylesheet" href="./css/aos.css">
+		<!-----------aos js library---------->
+		<script src="./js/aos.js"></script>
+
 	</head>
 	<body>
-
+		<script>
+			alert("javascript: search functionality in many pages,animation,scrollup button of footer");
+		</script>
 		<!----------nav--------------->
 		<nav class="nav">
 			<div class="nav-menu flex-row">
-				<div class="nav-brand">
+				<div class="nav-brand" data-aos="fade-right">
 					<a href="#" class="text-gray"> Courier Management System </a>
 				</div>
 				<div class="toggle-collapse">
@@ -53,11 +60,10 @@
 		<!-----x--------nav---------x--------->
 
 		<!----------main section-------------->
-
 		<main>
 			<!----site title------->
 			<section class="site-title">
-				<div class="site-background">
+				<div class="site-background" data-aos="zoom-in">
 					<h3> we know the time importance!!!</h3>
 					<h2> 24/7 available for your service</h2>
 					<button class="btn"><a href="register.html"> Sign up </a></button>
@@ -72,22 +78,22 @@
 
 		<footer class="footer">
 			<div class="container">
-				<div class="about-us">
+				<div class="about-us" data-aos="fade-right">
 					<h2>About Us</h2>
 					<p>We connects the world and provide better shipping facility to world.</p>
 				</div>
-				<div class="customer-support">
+				<div class="customer-support" data-aos="fade-right">
 					<h2>Customer Support</h2>
 					<a href="register.html">Open an Account</a><br>
 					<a href="login.html">Login to your Account</a><br>
 					<a href="#">Track your courier</a>
 				</div>
-				<div class="contact-us">
+				<div class="contact-us" data-aos="fade-left">
 					<h2>Contact Us</h2>
 					<p><i class="fas fa-envelope"></i> courier247@gmail.com</p>
 					<p><i class="fas fa-phone-square-alt"></i> 1890 111 2222</p>
 				</div>
-				<div class="follow">
+				<div class="follow" data-aos="fade-left">
 					<h2>Follow Us</h2>
 					<p>Let us be Social</p>
 					<div>
@@ -99,11 +105,14 @@
 				</div>
 			</div>
 			<div class="move-up">
-				<span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+				<span onclick="topFunction()"><i class="fas fa-arrow-circle-up fa-2x"></i></span>
 			</div>
 		</footer>
 
 		<!-----x------footer----------------->
+
+	<!-------------main.js------------>
+		<script src="./js/main.js"></script>
 
 	</body>
 </html>

@@ -5,6 +5,11 @@
 		<link rel="stylesheet" href="./css/all.css">
 		<!----Custom style----->
 		<link rel="stylesheet" href="./css/style.css">
+		<!------AOS--------->
+		<link rel="stylesheet" href="./css/aos.css">
+		<!-----------aos js library---------->
+		<script src="./js/aos.js"></script>
+
 	</head>
 	<body>
 	<!----------nav--------------->
@@ -52,10 +57,10 @@
 
 <!--------------------main---------------->
 	<hr>
-	<form action="">
+	<!--form action="">
 		<input type="search" id="gsearch" name="gsearch" placeholder="Search offers by ID">
 		<span><i class="fas fa-chevron-right"></i></span>
-	</form>
+	</form-->
 		<article style="margin: 3rem 1rem;">
 			<h1> Offer no.1 </h1>
 			<p>Offer for Golden members is running till 25 sep,2020,It's 50% off on courier.</p>
@@ -74,22 +79,22 @@
 	<!-------------footer------------------->
 	<footer class="footer">
 		<div class="container">
-			<div class="about-us">
+			<div class="about-us" data-aos="fade-right">
 				<h2>About Us</h2>
 				<p>We connects the world and provide better shipping facility to world.</p>
 			</div>
-			<div class="customer-support">
+			<div class="customer-support" data-aos="fade-right">
 				<h2>Customer Support</h2>
 				<a href="register.html">Open an Account</a><br>
 				<a href="login.html">Login to your Account</a><br>
 				<a href="#">Track your courier</a>
 			</div>
-			<div class="contact-us">
+			<div class="contact-us" data-aos="fade-left">
 				<h2>Contact Us</h2>
 				<p><i class="fas fa-envelope"></i> courier247@gmail.com</p>
 				<p><i class="fas fa-phone-square-alt"></i> 1890 111 2222</p>
 			</div>
-			<div class="follow">
+			<div class="follow" data-aos="fade-left">
 				<h2>Follow Us</h2>
 				<p>Let us be Social</p>
 				<div>
@@ -101,11 +106,15 @@
 			</div>
 		</div>
 		<div class="move-up">
-			<span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+			<span onclick="topFunction()"><i class="fas fa-arrow-circle-up fa-2x"></i></span>
 		</div>
 	</footer>
 
-	<!-----------x------footer---------x-------->
+	<!-----x------footer----------------->
+
+	<!-------------main.js------------>
+	<script src="./js/main.js"></script>
+
 
 
 
