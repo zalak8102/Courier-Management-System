@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title> Offers </title>
+		<!------bootstrap--------->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
 		<!----icons---------->
 		<link rel="stylesheet" href="./css/all.css">
 		<!----Custom style----->
@@ -14,10 +16,10 @@
 	</head>
 	<body>
 	<!----------nav--------------->
-	<nav class="nav">
+	<nav class="nav1">
 		<div class="nav-menu flex-row">
 			<div class="nav-brand">
-				<a href="#" class="text-gray"> Courier Management System </a>
+				<a href="#" class="text-gray" style="text-decoration: none"> Courier Management System </a>
 			</div>
 			<div class="toggle-collapse">
 				<div class="toggle-icons">
@@ -27,25 +29,25 @@
 			<div>
 				<ul class="nav-items">
 					<li class="nav-link">
-						<a href="add_courier.html"> Add New Courier </a>
+						<a href="add_courier.html" style="text-decoration: none"> Add New Courier </a>
 					</li>
 					<li class="nav-link">
-						<a href="user_courier.html"> Courier </a>
+						<a href="user_courier.html" style="text-decoration: none"> Courier </a>
 					</li>
 					<li class="nav-link">
-						<a href="track.html"> Track </a>
+						<a href="track.html" style="text-decoration: none"> Track </a>
 					</li>
 					<li class="nav-link">
-						<a href="user_offers.html"> Offers </a>
+						<a href="user_offers.html" style="text-decoration: none"> Offers </a>
 					</li>
 					<li class="nav-link">
-						<a href="user_branch.html"> Branch Info </a>
+						<a href="user_branch.html" style="text-decoration: none"> Branch Info </a>
 					</li>
 					<li class="nav-link">
-						<a href="user_profile.html"> Profile </a>
+						<a href="user_profile.html" style="text-decoration: none"> Profile </a>
 					</li>
 					<li class="nav-link">
-						<a href="index.html"> Logout </a>
+						<a href="index.html" style="text-decoration: none"> Logout </a>
 					</li>
 				</ul>
 			</div>
@@ -64,18 +66,38 @@
 			<input type="search" id="gsearch" name="gsearch" placeholder="Search offers by ID">
 			<span><i class="fas fa-chevron-right"></i></span>
 		</form>
-		<article style="margin: 3rem 1rem;">
-			<h1> Offer no.1 </h1>
-			<p>Offer for Golden members is running till 25 sep,2020,It's 50% off on courier.</p>
-			<button class="btn" name="avail" value="avail">Avail</button>
-		</article>
-		<article style="margin: 5rem 1rem;">
-			<h1> Offer no.2 </h1>
-			<p>Offer for all members is running till 5 sep,2020,It's 5% off on courier.</p>
-			<button class="btn" name="avail" value="avail">Avail</button>
-		</article>
+	<div class="card text-center w-25 mx-auto">
+		<div class="card-header">
+			Offer no.1
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">for Golden members</h5>
+			<p class="card-text">Offer for Golden members is running till 25 sep,2020,It's 50% off on courier.</p>
+			<a href="#" class="btn btn-success" name="update" value="update">Update</a>
+			<a href="#" class="btn btn-dark" name="remove" value="remove">Remove</a>
+		</div>
+		<div class="card-footer text-muted">
+			valid till 25 sep,2020
+		</div>
+	</div>
+	<br><br>
+	<div class="card text-center w-25 mx-auto">
+		<div class="card-header">
+			Offer no.2
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">for all members</h5>
+			<p class="card-text">Offer for all members is running till 5 sep,2020,It's 5% off on courier.</p>
+			<a href="#" class="btn btn-success" name="update" value="update">Update</a>
+			<a href="#" class="btn btn-dark" name="remove" value="remove">Remove</a>
+		</div>
+		<div class="card-footer text-muted">
+			valid till 5 sep,2020
+		</div>
+	</div>
 
-		<!----x------------main-----------x-------------------->
+
+	<!----x------------main-----------x-------------------->
 
 		<!-------------footer------------------->
 		<footer class="footer">
@@ -112,6 +134,8 @@
 		</footer>
 
 	<!-----x------footer----------------->
+	<!-----bootstrap js----------->
+	<script src="./js/bootstrap.min.js"></script>
 
 	<!-------------main.js------------>
 	<script src="./js/main.js"></script>

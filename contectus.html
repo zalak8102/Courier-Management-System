@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title> Home </title>
+		<title> Contect Us </title>
 
 		<!----icons---------->
 		<link rel="stylesheet" href="./css/all.css">
@@ -14,6 +14,9 @@
 		<link rel="stylesheet" href="./css/aos.css">
 		<!-----------aos js library---------->
 		<script src="./js/aos.js"></script>
+		<link rel="stylesheet" href="ass/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="ass/css/styles.css">
+		<link rel="stylesheet" href="ass/css/Contact-Form-Clean.css">
 
 	</head>
 	<body>
@@ -24,7 +27,7 @@
 		<nav class="nav1">
 			<div class="nav-menu flex-row">
 				<div class="nav-brand" data-aos="fade-right">
-					<a href="#" class="text-gray"> Courier Management System </a>
+					<a href="#" class="text-gray" style="text-decoration: none;color: black"> Courier Management System </a>
 				</div>
 				<div class="toggle-collapse">
 					<div class="toggle-icons">
@@ -34,44 +37,49 @@
 				<div>
 					<ul class="nav-items">
 						<li class="nav-link">
-							<a href="#"> Pricing </a>
+							<a href="index.html" style="text-decoration: none;color: black"> Home </a>
 						</li>
 						<li class="nav-link">
-							<a href="#"> How it's work </a>
+							<a href="#" style="text-decoration: none;color: black"> Pricing </a>
 						</li>
 						<li class="nav-link">
-							<a href="login.html"> Login </a>
+							<a href="#" style="text-decoration: none;color: black"> How it's work </a>
 						</li>
 						<li class="nav-link">
-							<a href="register.html"> Sign up </a>
+							<a href="login.html" style="text-decoration: none;color: black"> Login </a>
 						</li>
 						<li class="nav-link">
-							<a href="contectus.html"> Contact Us </a>
+							<a href="register.html" style="text-decoration: none;color: black"> Sign up </a>
+						</li>
+						<li class="nav-link">
+							<a href="contectus.html" style="text-decoration: none;color: black"> Contact Us </a>
 						</li>
 					</ul>
 				</div>
 				<div class="social text-gray">
-					<a href="#"><i class="fab fa-facebook"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-					<a href="#"><i class="fab fa-youtube"></i></a>
+					<a href="#" style="color: black"><i class="fab fa-facebook"></i></a>
+					<a href="#" style="color: black"><i class="fab fa-instagram"></i></a>
+					<a href="#" style="color:black"><i class="fab fa-twitter"></i></a>
+					<a href="#" style="color: black"><i class="fab fa-youtube"></i></a>
 				</div>
 			</div>
 		</nav>
 		<!-----x--------nav---------x--------->
-
+		<br>
 		<!----------main section-------------->
-		<main>
+
 			<!----site title------->
-			<section class="site-title">
-				<div class="site-background" data-aos="zoom-in">
-					<h3> we know the time importance!!!</h3>
-					<h2> 24/7 available for your service</h2>
-					<button class="btn"><a href="register.html"> Sign up </a></button>
-				</div>
-			</section>
+		<div class="contact-clean">
+			<form method="post">
+				<h2 class="text-center">Contact us</h2>
+				<div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
+				<div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+				<div class="form-group"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+				<div class="form-group"><button class="btn btn-primary" type="submit">send </button></div>
+			</form>
+		</div>
 			<!--x--site title---x---->
-		</main>
+
 
 		<!----x-----main section-----x-------->
 
@@ -111,9 +119,13 @@
 		</footer>
 
 		<!-----x------footer----------------->
+		<!-----bootstrap js----------->
+		<script src="./js/bootstrap.min.js"></script>
 
-	<!-------------main.js------------>
+		<!-------------main.js------------>
 		<script src="./js/main.js"></script>
+		<script src="ass/js/jquery.min.js"></script>
+		<script src="ass/bootstrap/js/bootstrap.min.js"></script>
 
 	</body>
 </html>

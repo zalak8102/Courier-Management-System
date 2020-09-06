@@ -88,7 +88,7 @@ input{
 /* ---x---- global classes ---x-----*/
 /* -------- navbar ------------*/
 
-.nav{
+.nav1{
     background: white;
     padding: 0.4rem;
     height: 0rem;
@@ -96,10 +96,10 @@ input{
     overflow: hidden;
 }
 
-.nav .nav-menu{
+.nav1 .nav-menu{
     justify-content: space-between;
 }
-.nav .toggle-collapse{
+.nav1 .toggle-collapse{
     position: absolute;
     top: 0%;
     width: 90%;
@@ -107,47 +107,47 @@ input{
     display: none;
 }
 
-.nav .toggle-collapse .toggle-icons{
+.nav1 .toggle-collapse .toggle-icons{
     display: flex;
     justify-content: flex-end;
     padding: 1.7rem 0;
 }
-.nav .toggle-collapse .toggle-icons i{
+.nav1 .toggle-collapse .toggle-icons i{
     font-size: 1.4rem;
     color: var(--text-gray);
 }
-.nav .nav-items{
+.nav1 .nav-items{
     display: flex;
     margin: 0;
 }
-.nav .nav-items .nav-link{
+.nav1 .nav-items .nav-link{
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
     font-family: var(--Abel);
 }
 
-.nav .nav-items .nav-link:hover{
+.nav1 .nav-items .nav-link:hover{
     background-color: var(--midnight);
 }
 
-.nav .nav-items .nav-link:hover a{
+.nav1 .nav-items .nav-link:hover a{
     color: var(--white);
 }
 
-.nav .nav-brand a{
+.nav1 .nav-brand a{
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
     font-family: var(--Lexend);
 }
-.nav .social{
+.nav1 .social{
     padding: 1.4rem 0;
 }
-.nav .social i{
+.nav1 .social i{
     padding: 0.2rem;
 }
-.nav .social i:hover{
+.nav1 .social i:hover{
     color:#a1c4cf;
 }
 /*-----x----navbar ------x------*/
@@ -287,10 +287,10 @@ footer.footer .move-up span:hover{
 
 /*--------viewport--------*/
 @media only screen and (max-width: 990px) {
-    .nav .nav-menu,.nav .nav-links {
+    .nav1 .nav-menu,.nav .nav-links {
         flex-direction: column;
     }
-    .nav .toggle-collapse{
+    .nav1 .toggle-collapse{
         display: initial;
     }
     h2{
@@ -306,7 +306,7 @@ footer.footer .move-up span:hover{
     footer.footer .container{
         grid-template-columns: repeat(2,1fr);
     }
-    .nav .nav-brand a{
+    .nav1 .nav-brand a{
         font-size: 1.4rem;
     }
     h2{
@@ -322,7 +322,7 @@ footer.footer .move-up span:hover{
     footer.footer .container{
         grid-template-columns: repeat(1,1fr);
     }
-    .nav .nav-brand a{
+    .nav1 .nav-brand a{
         font-size: 1.2rem;
     }
     h2{
@@ -333,7 +333,7 @@ footer.footer .move-up span:hover{
         font-family: var(--Abel);
         font-size: 1.0rem;
     }
-    nav .toggle-collapse{
+    nav1 .toggle-collapse{
         width: 100% !important;
     }
 }
