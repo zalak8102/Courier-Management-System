@@ -2,6 +2,8 @@
 <html>
 	<head>
 		<title> Branch Courier </title>
+		<!------bootstrap--------->
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
 		<!----icons---------->
 		<link rel="stylesheet" href="./css/all.css">
 		<!----Custom style----->
@@ -10,14 +12,14 @@
 		<link rel="stylesheet" href="./css/aos.css">
 		<!-----------aos js library---------->
 		<script src="./js/aos.js"></script>
-
+		<script src="./js/jquery-3.5.1.slim.min.js"></script>
 	</head>
 	<body>
 	<!----------nav--------------->
 	<nav class="nav1">
 		<div class="nav-menu flex-row">
 			<div class="nav-brand">
-				<a href="#" class="text-gray"> Courier Management System </a>
+				<a href="#" class="text-gray" style="text-decoration: none"> Courier Management System </a>
 			</div>
 			<div class="toggle-collapse">
 				<div class="toggle-icons">
@@ -27,19 +29,19 @@
 			<div>
 				<ul class="nav-items">
 					<li class="nav-link">
-						<a href="branch_courier.html"> Courier </a>
+						<a href="branch_courier.html" style="text-decoration: none"> Courier </a>
 					</li>
 					<li class="nav-link">
-						<a href="admin_branch.html"> Branch Info </a>
+						<a href="admin_branch.html" style="text-decoration: none"> Branch Info </a>
 					</li>
 					<li class="nav-link">
-						<a href="transport.html"> Transport Staff </a>
+						<a href="transport.html" style="text-decoration: none"> Transport Staff </a>
 					</li>
 					<li class="nav-link">
-						<a href="admin_profile.html"> Profile </a>
+						<a href="admin_profile.html" style="text-decoration: none"> Profile </a>
 					</li>
 					<li class="nav-link">
-						<a href="index.html"> Logout </a>
+						<a href="index.html" style="text-decoration: none"> Logout </a>
 					</li>
 				</ul>
 			</div>
@@ -72,16 +74,16 @@
 			   <td>surat</td>
 			   <td>nadiad</td>
 			   <td>24 march,2020</td>
-			   <td><button class="btn" name="manage" value="manage">Manage</button><td>
-			   <td><button class="btn" name="generatebill" value="generatebill">Generate Bill</button><td>
+			   <td><button class="btn" name="manage" value="manage" data-toggle="modal" data-target="#managemodal">Manage</button><td>
+			   <td><button class="btn" name="generatebill" value="generatebill" data-toggle="modal" data-target="#billmodal">Generate Bill</button><td>
 			</tr>
 			<tr>
 			   <td>C003</td>
 			   <td>surat</td>
 			   <td>ahmedabad</td>
 			   <td>15 jun,2020</td>
-			   <td><button class="btn" name="manage" value="manage">Manage</button><td>
-			   <td><button class="btn" name="generatebill" value="generatebill">Generate Bill</button><td>
+			   <td><button class="btn" name="manage" value="manage" data-toggle="modal" data-target="#managemodal">Manage</button><td>
+			   <td><button class="btn" name="generatebill" value="generatebill" data-toggle="modal" data-target="#billmodal">Generate Bill</button><td>
 			</tr>
 		</table>
 		<br>
@@ -107,6 +109,68 @@
 			</tr>
 		</table>
 	<!-------x-------------main------------x--------------->
+	<!----------------- modal------------->
+
+	<div class="modal" id="managemodal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Manage courier</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<form>
+						<label>Date of delivery:</label> <input type="date" name="ddate"/><br>
+						<label>Delivery boy ID:</label> <input type="text" name="dboy"/>
+					</form>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary" name="submit" >ADD</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="modal" id="billmodal">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+
+				<!-- Modal Header -->
+				<div class="modal-header">
+					<h4 class="modal-title">Generate Bill</h4>
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+				</div>
+
+				<!-- Modal body -->
+				<div class="modal-body">
+					<form>
+						<label>Courier ID:</label> <input type="text" name="cid" value="C001"/><br>
+						<label>Origin:</label> <input type="text" name="org" value="surat"/><br>
+						<label>Destination:</label> <input type="text" name="dest" value="nadiad"/><br>
+						<label>Date of delivery:</label> <input type="date" name="ddate"/><br>
+						<label>Delivery boy ID:</label> <input type="text" name="dboy" value="T001"/><br>
+						<label>Cost:</label> <input type="number" name="cost" value="2000"/>
+					</form>
+				</div>
+
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-primary" name="submit" >Generate</button>
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-------x------modal-----------x------------>
+
 	<!-------------footer------------------->
 	<footer class="footer">
 		<div class="container">
@@ -142,7 +206,9 @@
 	</footer>
 
 	<!-----x------footer----------------->
-
+	<!-----bootstrap js----------->
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/popper.js"></script>
 	<!-------------main.js------------>
 	<script src="./js/main.js"></script>
 	</body>
