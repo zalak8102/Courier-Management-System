@@ -1,3 +1,38 @@
+$(document).ready(function () {
+    $nav1=$('.nav1');
+    $toggleCollapse=$('.toggle-collapse');
+    $toggleCollapse.click(function () {
+        $nav1.toggleClass('collapse');
+    })
+
+    $('#next').on('click',function () {
+        var cimg=$('.active');
+        var nimg = cimg.next();
+        if(nimg.length){
+            cimg.removeClass('active').css('z-index',-10);
+            nimg.addClass('active').css('z-index',10);
+        }
+    });
+
+    $('#prev').on('click',function () {
+        var cimg=$('.active');
+        var pimg = cimg.prev();
+        if(pimg.length){
+            cimg.removeClass('active').css('z-index',-10);
+            pimg.addClass('active').css('z-index',10);
+        }
+    });
+
+    $("#bill").on('click',function(){
+        $.getJSON("bill.json", function(result){
+            $.each(result, function(i, field){
+                $("#billarea").append(i + ": "+field);
+                $("#billarea").append('<br>');
+            });
+        });
+    });
+});
+
 function topFunction() {
 
     document.documentElement.scrollTop = 0;
